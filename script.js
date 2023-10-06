@@ -184,15 +184,17 @@ const books = [
     image: './books-images/unknown.jpg'
   }
 ]
-const createBoxes = () =>{
-  let body = document.body
-  books.forEach(book => {
+const createBoxes = (newBooks) =>{
+  const body = document.getElementById("mainContent")
+  while(body.hasChildNodes()){
+    body.removeChild(body.lastChild)
+  }
+  newBooks.forEach(book => {
     
   body.innerHTML += 
   `<div  class="box" >
    <h2> ${book.title}</h2>
    <h3>${book.author}</h3>
-   </div>
    <p>${book.year}</p>
    <p>${book.genre}</p>
    <p>${book.rating}</p>
@@ -202,47 +204,28 @@ const createBoxes = () =>{
   `
 });
 
+}
+ 
 
- }
+createBoxes(books)
 
-createBoxes()
+const filterGenre = () => {
+  const selectedGenre = document.getElementById("genre").value 
+  if(selectedGenre === "all"){
+    createBoxes(books)
+  }
+  else{
+    const filterBooks= books.filter(book => {return book.genre.toLowerCase() === selectedGenre})
+    createBoxes(filterBooks)
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // const boxArray =[].slice.call(boxCollection)
-  //  console.log(boxArray)
-  // for (let index = 0; index < boxArray.length; ++index) {
-  
-  //   let box = boxArray[index];
-  //   console.log(box)
-  //   let title =  boxArray.getElementsByTagName("p");  
-  //   console.log
-  //   title.innerHTML = books[index].title;
-  //   console.log(item.childElementCount)
-
-
-
-
-
-    // item.getElementsByTagName = books[0].title
-
-    // var lastChild = item.getElementsByTagName('img')[0];
-    // console.log(lastChild)
-    // item.src = books[0].image
-
-
-
-// console.log(`This collection has ${boxCollection.length} items`)
-// let box  = boxCollection[3].childNodes;
-// console.log(box)
+const sortByRating = (direction) =>{ 
+  const sortedBooks = books.sort((c, other) => other.rating - c.rating)
+  if( direction === 1){
+    createBoxes(sortedBooks)
+  }
+  else{
+    createBoxes (sortedBooks.reverse()) 
+  }
+}

@@ -1,19 +1,29 @@
 h1 {
     text-align:center;
+    margin-top: 25px;
 }
+
+
 .box {
-    height: 500px;
+    height: 400px;
     width: 30%;
     margin-bottom: 30px;
     margin-left: 30px;
     border-radius: 0.75rem;
+    margin-top: 40px; 
     float: left;
-    background-color: lightsalmon;
+    background-color: lightsteelblue;
     align-items: center;
     text-align: center;
     justify-content: center;
   }
 
+.text{
+    /* font-family: ; */
+}
+.mainContent{
+    background-color: lightgreen;
+}
 img{
     border-radius: 0.75rem;
     height: 40%;
@@ -21,5 +31,8 @@ img{
 
 }
 .button {
-    float: left;
+    float: right;
+    background-color:blue;
+    border-bottom: black;
+    
 }

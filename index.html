@@ -8,17 +8,25 @@
 </head>
 <body>
   <h1>Novel Library</h1>
-  <label for="genre">Choose a genre:</label>
+  <div class="meny">
+    <label for="genre">Choose a genre:</label>
   <select name="genre" id="genre" onchange="filterGenre()">
     <option value="all">All</option>
     <option value="dystopian">Dystopian</option>
-    <option value="science Fiction">Science Fiction</option>
+    <option value="science fiction">Science Fiction</option>
     <option value="mystery">Mystery</option>
     <option value="fiction">Fiction</option>
     <option value="fantasy">Fantasy</option>
     <option value="horror">Horror</option>
     <option value="adventure">Adventure</option>
   </select>
+  <button type="button" onclick="sortByRating(1)">high to low</button>
+  <button type="button" onclick="sortByRating(2)">low to high</button>
+</div>
+  
+<div id="mainContent">
+
+  </div>
   <script src="./script.js"></script>
 </body>
 </html>
