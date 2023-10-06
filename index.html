@@ -8,136 +8,17 @@
 </head>
 <body>
   <h1>Novel Library</h1>
-  <div id=box1 class="box">
-    <div>
-      <h1 > 
-        Este es el titulo
-      </h1>
-     </div>
-    
-      <img src="" alt="MDN" />
-    </div>
-  <div id=box2 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box3 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box4 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box5 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box6 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box7 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box8 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box9 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box10 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box11 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box12 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box13 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box14 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box15 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box16 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box17 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div> <div id=box18 class="box">
-    <p id="titulo1"> 
-     Este es el titulo
-    </p>
-    <div id="image1" class="image">
-      <img src="mdn-logo-sm.png" alt="MDN" />
-    </div>
-  </div>
-
+  <label for="genre">Choose a genre:</label>
+  <select name="genre" id="genre" onchange="filterGenre()">
+    <option value="all">All</option>
+    <option value="dystopian">Dystopian</option>
+    <option value="science Fiction">Science Fiction</option>
+    <option value="mystery">Mystery</option>
+    <option value="fiction">Fiction</option>
+    <option value="fantasy">Fantasy</option>
+    <option value="horror">Horror</option>
+    <option value="adventure">Adventure</option>
+  </select>
   <script src="./script.js"></script>
 </body>
 </html>

@@ -71,7 +71,7 @@ const books = [
     rating: 4.7,
     description:
       'The first book in the beloved Harry Potter series, it introduces readers to the magical world of Hogwarts and the young wizard Harry Potter.',
-    image: "./books-images/harry-potter-and-the-sorcerer'.jpg"
+    image: "./books-images/harry-potter-and-the-sorcerer.jpg"
   },
   {
     title: 'Moby-Dick',
@@ -184,21 +184,65 @@ const books = [
     image: './books-images/unknown.jpg'
   }
 ]
+const createBoxes = () =>{
+  let body = document.body
+  books.forEach(book => {
+    
+  body.innerHTML += 
+  `<div  class="box" >
+   <h2> ${book.title}</h2>
+   <h3>${book.author}</h3>
+   </div>
+   <p>${book.year}</p>
+   <p>${book.genre}</p>
+   <p>${book.rating}</p>
+   <p>${book.description}</p>
+   <img src= ${book.image} alt="MDN" />
+   </div>
+  `
+});
 
-let boxCollection = document.getElementsByClassName("box");
 
-const populateBoxes = () =>{
+ }
 
-for (let item of boxCollection) {
-    item.textContent = books[0].title
-    let lastChild = item.getElementsByTagName("img");
-    console.log(lastChild)
-    item.src = books[0].image
-}
+createBoxes()
 
 
-}
-populateBoxes()
+
+
+
+
+
+
+
+
+
+
+
+
+  // const boxArray =[].slice.call(boxCollection)
+  //  console.log(boxArray)
+  // for (let index = 0; index < boxArray.length; ++index) {
+  
+  //   let box = boxArray[index];
+  //   console.log(box)
+  //   let title =  boxArray.getElementsByTagName("p");  
+  //   console.log
+  //   title.innerHTML = books[index].title;
+  //   console.log(item.childElementCount)
+
+
+
+
+
+    // item.getElementsByTagName = books[0].title
+
+    // var lastChild = item.getElementsByTagName('img')[0];
+    // console.log(lastChild)
+    // item.src = books[0].image
+
+
+
 // console.log(`This collection has ${boxCollection.length} items`)
 // let box  = boxCollection[3].childNodes;
 // console.log(box)
