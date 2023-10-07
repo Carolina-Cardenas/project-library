@@ -192,20 +192,23 @@ const createBoxes = (newBooks) =>{
   newBooks.forEach(book => {
     
   body.innerHTML += 
+  
   `<div  class="box" >
-   <h2> ${book.title}</h2>
-   <h3>${book.author}</h3>
-   <p>${book.year}</p>
-   <p>${book.genre}</p>
-   <p>${book.rating}</p>
-   <p>${book.description}</p>
-   <img src= ${book.image} alt="MDN" />
+      <h2> ${book.title}</h2>
+      <h3>${book.author}</h3>
+      <p>${book.year}</p>
+      <div class="description">
+        <p>${book.description}</p>
+        <p> &#9733; ${book.rating}</p>
+        ${book.genre}
+        </div>
+        <div class="image">
+        <img src= ${book.image} alt="MDN" />
+      </div>
    </div>
   `
 });
-
 }
- 
 
 createBoxes(books)
 
