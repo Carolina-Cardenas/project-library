@@ -1,16 +1,15 @@
 h1 {
     text-align:center;
-    margin-top: 25px;
+    margin-top: 90px;
 }
 
 
 .box {
     height: 413px;
     width: 30%;
-
     margin-left: 30px;
     border-radius: 0.75rem;
-    margin-top: 40px; 
+    margin-top: 50px; 
     float: left;
     background-color: lightsteelblue;
     align-items: center;
@@ -19,30 +18,38 @@ h1 {
   }
   
 
-.text{
-    /* font-family: ; */
+*{
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.mainContent{
-    background-color: lightgreen;
-}
+
 img{
     border-radius: 0.75rem;
     height: 40%;
     width: 70%;
 
 }
-.button {
-    float: right;
-    background-color:blue;
-    border-bottom: black;
-    margin-left: 60px;
-    
+button {
+    border-radius: 0.50rem;
+    border-color: black;
+}
+.shadow{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.float{
+    float:left;
+    margin-left: 30px;
+   
 }
 .meny{
-    align-items: center;
-    text-align: center;
+    display: flex;
+ align-items: center;
+ text-align: center;  
     justify-content: center;
-    
+    margin: auto;
+    width:auto; 
+    padding: 10px;
+
 }
 
 .description{
@@ -50,10 +57,6 @@ img{
     width: 50%;
     margin-left: 22px;
     text-align:justify;
-
-    
-    
-    
 }
 .image{
     margin-left: 215px;
@@ -61,3 +64,11 @@ img{
     margin-top: 24px;
 
 }
+#mainContent{
+    margin-top: 50px;
+}
+.labelText{
+    text-align: left;
+    margin-bottom: 10px;
+}
+

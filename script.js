@@ -193,7 +193,7 @@ const createBoxes = (newBooks) =>{
     
   body.innerHTML += 
   
-  `<div  class="box" >
+  `<div  class="box shadow" >
       <h2> ${book.title}</h2>
       <h3>${book.author}</h3>
       <p>${book.year}</p>
@@ -231,4 +231,15 @@ const sortByRating = (direction) =>{
   else{
     createBoxes (sortedBooks.reverse()) 
   }
+}   
+
+const sortByYear = (direction) =>{ 
+  const sortedBooks = books.sort((c, other) => other.year - c.year)
+  if( direction === 1){
+    createBoxes(sortedBooks)
+  }
+  else{
+    createBoxes (sortedBooks.reverse()) 
+  }
 }
+
