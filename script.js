@@ -194,15 +194,15 @@ const createBoxes = (newBooks) =>{
   body.innerHTML += 
   
   `<div  class="box shadow" >
-      <h2> ${book.title}</h2>
-      <h3>${book.author}</h3>
-      <p>${book.year}</p>
+    <h2> ${book.title}</h2>
+    <h3>${book.author}</h3>
+    <p>${book.year}</p>
       <div class="description">
         <p>${book.description}</p>
         <p> &#9733; ${book.rating}</p>
         ${book.genre}
-        </div>
-        <div class="image">
+      </div>
+      <div class="image">
         <img src= ${book.image} alt="MDN" />
       </div>
    </div>
